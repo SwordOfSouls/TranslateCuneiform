@@ -106,9 +106,9 @@
 	Z">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Home</title>
+    <title>Share</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Home.css" media="screen">
+<link rel="stylesheet" href="Share.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 3.29.1, nicepage.com">
@@ -123,7 +123,7 @@
 		"logo": "images/favicon.png"
 }</script>
     <meta name="theme-color" content="#478ac9">
-    <meta property="og:title" content="Home">
+    <meta property="og:title" content="Share">
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9BR1219XW9"></script>
@@ -134,7 +134,7 @@
 
   gtag('config', 'G-9BR1219XW9');
 </script></head>
-  <body data-home-page="Home.html" data-home-page-title="Home" class="u-body"><header class="u-clearfix u-header u-palette-3-light-2 u-header" id="sec-fdca"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+  <body class="u-body"><header class="u-clearfix u-header u-palette-3-light-2 u-header" id="sec-fdca"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <a href="Home.html" data-page-id="6382342" class="u-image u-logo u-image-1" data-image-width="100" data-image-height="65" title="Home">
           <img src="images/favicon.png" class="u-logo-image u-logo-image-1">
         </a>
@@ -143,55 +143,14 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <h1 class="u-hidden-xl u-text u-text-default u-text-1">SITE ONLY WORKS ON PC</h1>
         <div class="u-clearfix u-custom-html u-custom-html-1">
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
           <script src="script.js"></script>
           <link href="stylesheet.css" rel="stylesheet">
-          <div class="input-text">
-            <input style="text-align:center" type="user-answer" id="uA1" size="100%">
-            <style> @font-face { font-family: cuneiform; src: url('./fonts/Khosrau-VeoZ.otf'); } 
+          <style> @font-face { font-family: cuneiform; src: url('./fonts/Khosrau-VeoZ.otf'); } 
 			max-width: 200x;
   width: 80%;
   min-width: 50px; </style>
-            <h1 style="font-family: cuneiform" id="paragraph"></h1>
-          </div>
-          <script> var inp = document.getElementById('uA1');
-var p = document.getElementById('paragraph');
-inp.addEventListener('input', function() {
-    p.textContent = inp.value;
-}); </script>
-        </div>
-        <div class="u-clearfix u-custom-html u-custom-html-2">
-          <style> .button {
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-.button1 {
-  background-color: white;
-  color: black;
-  border: 2px solid #4CAF50;
-}
-.button1:hover {
-  background-color: #4CAF50;
-  color: white;
-}
-.button2 {
-  background-color: white;
-  color: black;
-  border: 2px solid #008CBA;
-}
-.button2:hover {
-  background-color: #008CBA;
-  color: white;
-} </style>
-          <button onclick="myFunction()" class="button button1">Share</button>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+          <h1 style="font-family: cuneiform" id="paragraph">No Value Inputted</h1>
           <script> var crypt = {
   // (B1) THE SECRET KEY
   secret : "CIPHERKEY",
@@ -210,153 +169,52 @@ inp.addEventListener('input', function() {
     return decipher;
   }
 };
-        function myFunction() {
-			var inp = document.getElementById('uA1');
-  /* Get the text field */
-   /* Copy the text inside the text field */
-  navigator.clipboard.writeText("https://translate-cuneiform.tk/Share.html?Share=" + crypt.encrypt(inp.value));
-  /* Alert the copied text */
+var p = document.getElementById('paragraph');
+    p.textContent = crypt.decrypt(GetURLParameter('Share'));
+	function GetURLParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
 } </script>
         </div>
-        <h1 class="u-text u-text-default u-text-2">Conversions</h1>
-        <div class="u-clearfix u-custom-html u-custom-html-3">
-          <h1>A
-	B
-	C
-	D
-	E
-	F
-	G
-	H
-	I
-	J
-	K
-	L
-	M
-	N
-	O
-	P
-	Q
-	R
-	S
-	T
-	U
-	V
-	W
-	X
-	Y
-	Z</h1>
-        </div>
-        <div class="u-clearfix u-custom-html u-custom-html-4">
-          <style> @font-face { font-family: cuneiform; src: url('./fonts/Khosrau-VeoZ.otf'); } </style>
-          <h1 style="font-family: cuneiform">A
-	B
-	C
-	D
-	E
-	F
-	G
-	H
-	I
-	J
-	K
-	L
-	M
-	N
-	O
-	P
-	Q
-	R
-	S
-	T
-	U
-	V
-	W
-	X
-	Y
-	Z</h1>
-        </div>
-        <div class="u-clearfix u-custom-html u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-custom-html-5">
-          <h1>a
-	b
-	c
-	d
-	e
-	f
-	g
-	h
-	i
-	j
-	k
-	l
-	m
-	n
-	o
-	p
-	q
-	r
-	s
-	t
-	u
-	v
-	w
-	x
-	y
-	z</h1>
-        </div>
-        <div class="u-clearfix u-custom-html u-custom-html-6">
-          <style> @font-face { font-family: cuneiform; src: url('./fonts/Khosrau-VeoZ.otf'); } </style>
-          <h1 style="font-family: cuneiform">a
-	b
-	c
-	d
-	e
-	f
-	g
-	h
-	i
-	j
-	k
-	l
-	m
-	n
-	o
-	p
-	q
-	r
-	s
-	t
-	u
-	v
-	w
-	x
-	y
-	z</h1>
-        </div>
-        <div class="u-clearfix u-custom-html u-custom-html-7">
-          <h1>1
-	2
-	3
-	4
-	5
-	6
-	7
-	8
-	9
-	0</h1>
-        </div>
-        <div class="u-clearfix u-custom-html u-custom-html-8">
-          <style> @font-face { font-family: cuneiform; src: url('./fonts/Khosrau-VeoZ.otf'); } </style>
-          <h1 style="font-family: cuneiform">1
-	2
-	3
-	4
-	5
-	6
-	7
-	8
-	9
-	0</h1>
+        <div class="u-clearfix u-custom-html u-custom-html-2">
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+          <script> // (B) ENCRYPT & DECRYPT FUNCTIONS
+var crypt = {
+  // (B1) THE SECRET KEY
+  secret : "CIPHERKEY",
+ 
+  // (B2) ENCRYPT
+  encrypt : function (clear) {
+    var cipher = CryptoJS.AES.encrypt(clear, crypt.secret);
+    cipher = cipher.toString();
+    return cipher;
+  },
+ 
+  // (B3) DECRYPT
+  decrypt : function (cipher) {
+    var decipher = CryptoJS.AES.decrypt(cipher, crypt.secret);
+    decipher = decipher.toString(CryptoJS.enc.Utf8);
+    return decipher;
+  }
+};
+ 
+// (C) TEST
+// (C1) ENCRYPT CLEAR TEXT
+var cipher = crypt.encrypt("Not FOO BAR");
+console.log(cipher);
+ 
+// (C2) DECRYPT CIPHER TEXT
+var decipher = crypt.decrypt(cipher);
+console.log(decipher); </script>
         </div>
       </div>
     </section>

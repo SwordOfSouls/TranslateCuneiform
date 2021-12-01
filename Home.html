@@ -146,7 +146,7 @@
           <script src="script.js"></script>
           <link href="stylesheet.css" rel="stylesheet">
           <div class="input-text">
-            <input style="text-align:center" type="user-answer" id="uA1" size="125">
+            <input style="text-align:center" type="user-answer" id="uA1" size="100%">
             <style> @font-face { font-family: cuneiform; src: url('./fonts/Khosrau-VeoZ.otf'); } 
 			max-width: 200x;
   width: 80%;
@@ -159,8 +159,67 @@ inp.addEventListener('input', function() {
     p.textContent = inp.value;
 }); </script>
         </div>
-        <h1 class="u-text u-text-default u-text-2">Conversions</h1>
         <div class="u-clearfix u-custom-html u-custom-html-2">
+          <style> .button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+}
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+} </style>
+          <button onclick="myFunction()" class="button button1">Share</button>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+          <script> var crypt = {
+  // (B1) THE SECRET KEY
+  secret : "CIPHERKEY",
+ 
+  // (B2) ENCRYPT
+  encrypt : function (clear) {
+    var cipher = CryptoJS.AES.encrypt(clear, crypt.secret);
+    cipher = cipher.toString();
+    return cipher;
+  },
+ 
+  // (B3) DECRYPT
+  decrypt : function (cipher) {
+    var decipher = CryptoJS.AES.decrypt(cipher, crypt.secret);
+    decipher = decipher.toString(CryptoJS.enc.Utf8);
+    return decipher;
+  }
+};
+        function myFunction() {
+			var inp = document.getElementById('uA1');
+  /* Get the text field */
+   /* Copy the text inside the text field */
+  navigator.clipboard.writeText("https://translate-cuneiform.tk/Share.html?Share=" + crypt.encrypt(inp.value));
+  /* Alert the copied text */
+} </script>
+        </div>
+        <h1 class="u-text u-text-default u-text-2">Conversions</h1>
+        <div class="u-clearfix u-custom-html u-custom-html-3">
           <h1>A
 	B
 	C
@@ -188,7 +247,7 @@ inp.addEventListener('input', function() {
 	Y
 	Z</h1>
         </div>
-        <div class="u-clearfix u-custom-html u-custom-html-3">
+        <div class="u-clearfix u-custom-html u-custom-html-4">
           <style> @font-face { font-family: cuneiform; src: url('./fonts/Khosrau-VeoZ.otf'); } </style>
           <h1 style="font-family: cuneiform">A
 	B
@@ -217,7 +276,7 @@ inp.addEventListener('input', function() {
 	Y
 	Z</h1>
         </div>
-        <div class="u-clearfix u-custom-html u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-custom-html-4">
+        <div class="u-clearfix u-custom-html u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-custom-html-5">
           <h1>a
 	b
 	c
@@ -245,7 +304,7 @@ inp.addEventListener('input', function() {
 	y
 	z</h1>
         </div>
-        <div class="u-clearfix u-custom-html u-custom-html-5">
+        <div class="u-clearfix u-custom-html u-custom-html-6">
           <style> @font-face { font-family: cuneiform; src: url('./fonts/Khosrau-VeoZ.otf'); } </style>
           <h1 style="font-family: cuneiform">a
 	b
@@ -274,7 +333,7 @@ inp.addEventListener('input', function() {
 	y
 	z</h1>
         </div>
-        <div class="u-clearfix u-custom-html u-custom-html-6">
+        <div class="u-clearfix u-custom-html u-custom-html-7">
           <h1>1
 	2
 	3
@@ -286,7 +345,7 @@ inp.addEventListener('input', function() {
 	9
 	0</h1>
         </div>
-        <div class="u-clearfix u-custom-html u-custom-html-7">
+        <div class="u-clearfix u-custom-html u-custom-html-8">
           <style> @font-face { font-family: cuneiform; src: url('./fonts/Khosrau-VeoZ.otf'); } </style>
           <h1 style="font-family: cuneiform">1
 	2
